@@ -1,0 +1,35 @@
+#cta-active {
+    background: green;
+    border: none;
+    color: white;
+
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+#cta-inactive {
+    background: #7700FF;
+    border: none;
+    color: white;
+
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+
+#cta-delete {
+    background: orangered;
+    border: none;
+    color: white;
+
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}

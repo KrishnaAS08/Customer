@@ -12,11 +12,11 @@
     <label>Active: </label> {{customer.active}}
   </div>
  
-  <button class="button is-small btn-primary" *ngIf='customer.active' (click)='updateActive(false)'>Inactive</button>
- 
-  <button class="button is-small btn-primary" *ngIf='!customer.active' (click)='updateActive(true)'>Active</button>
- 
-  <button class="button is-small btn-danger" (click)='deleteCustomer()'>Delete</button>
- 
+  <button type="button" id="cta-inactive" *ngIf='customer.active' (click)='updateActive(false)'>Inactive</button>
+
+  <button type="button" id="cta-active" *ngIf='!customer.active' (click)='updateActive(true)'>Active</button>
+
+  <button type="button" id="cta-delete" (click)='deleteCustomer()'>Delete</button>
+   
   <hr/>
 </div>

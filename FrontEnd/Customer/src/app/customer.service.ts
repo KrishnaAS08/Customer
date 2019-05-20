@@ -11,15 +11,15 @@ export class CustomerService {
  
   constructor(private http: HttpClient) { }
  
-  getCustomer(id: number): Observable<Object> {
+  getCustomer(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
  
-  createCustomer(customer: Object): Observable<Object> {
+  createCustomer(customer: any): Observable<any> {
     return this.http.post(`${this.baseUrl}` + `/create`, customer);
   }
  
-  updateCustomer(id: number, value: any): Observable<Object> {
+  updateCustomer(id: number, value: any): Observable<any> {
     console.log('value>>>',value);
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
